@@ -18,11 +18,7 @@ The tool lets you select a folder, scans all files inside recursively, and repor
 -  **Summary Report** – shows total scanned, clean, infected, and errors.  
 - **Threaded Scan** – UI remains responsive while scanning.  
 
----
-Example:
-Scanned: 152 | Clean: 150 | Infected: 1 | Errors: 1
 
-```
 
 ---
 
@@ -38,25 +34,22 @@ C:\Program Files\ClamAV\clamscan.exe
 
 ````
 - **Linux (Debian/Ubuntu)**:
-```bash
+
 sudo apt update
 sudo apt install clamav clamav-daemon
-````
+
 
 ### 2. Install Python dependencies
 
-```bash
+
 pip install tk
-```
+
 
 *(Tkinter usually comes pre-installed with Python, but install if missing.)*
 
 ### 3. Run the App
 
-```bash
 python antivirus_gui.py
-```
-
 ---
 
 ## 🖱️ Usage
@@ -71,10 +64,10 @@ python antivirus_gui.py
 
 ## 📂 Project Structure
 
-```
+
 ├── antivirus_gui.py    # Main application code
 ├── README.md           # Documentation
-```
+
 
 ---
 
