@@ -6,19 +6,27 @@ The tool lets you select a folder, scans all files inside recursively, and repor
 
 ---
 
-## ✨ Features
+##  Features
 
 -  **Folder Scan** – recursively scan all files inside a directory.  
-- **GUI with Tkinter** – clean interface with Treeview for results.  
-- **ClamAV Integration** – uses `clamscan` backend for virus detection.  
-- **Colored Results** –  
-  - ✅ Green → Clean  
-  - ❌ Red → Infected  
-  - ⚠️ Orange → Error/Unknown  
+-  **GUI with Tkinter** – clean interface with Treeview for results.  
+-  **ClamAV Integration** – uses `clamscan` backend for virus detection.  
+-  **Colored Results** –  
+  -  Green → Clean  
+  -  Red → Infected  
+  - Orange → Error/Unknown  
 -  **Summary Report** – shows total scanned, clean, infected, and errors.  
-- **Threaded Scan** – UI remains responsive while scanning.  
+-  **Threaded Scan** – UI remains responsive while scanning.  
 
+---
 
+  
+```
+
+Example:
+Scanned: 152 | Clean: 150 | Infected: 1 | Errors: 1
+
+```
 
 ---
 
@@ -34,22 +42,25 @@ C:\Program Files\ClamAV\clamscan.exe
 
 ````
 - **Linux (Debian/Ubuntu)**:
-
+```bash
 sudo apt update
 sudo apt install clamav clamav-daemon
-
+````
 
 ### 2. Install Python dependencies
 
-
+```bash
 pip install tk
-
+```
 
 *(Tkinter usually comes pre-installed with Python, but install if missing.)*
 
 ### 3. Run the App
 
+```bash
 python antivirus_gui.py
+```
+
 ---
 
 ## 🖱️ Usage
@@ -64,11 +75,26 @@ python antivirus_gui.py
 
 ## 📂 Project Structure
 
-
+```
 ├── antivirus_gui.py    # Main application code
 ├── README.md           # Documentation
-
+```
 
 ---
 
+## ⚠️ Notes & Limitations
 
+* Requires **ClamAV virus definitions** (`freshclam` must be run regularly).
+* Only **scans** files, does **not clean/remove** them automatically.
+* Error results may occur if a file is locked, inaccessible, or not scannable.
+
+---
+
+## 📜 License
+
+This project is open-source under the **MIT License**.
+
+```
+
+Do you want me to also add a **“Testing with EICAR virus file”** section in this README so users can verify detection?
+```
