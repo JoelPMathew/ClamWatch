@@ -1,5 +1,5 @@
 
-# 🛡️ ClamWatch (ClamAV-based Folder Scanner)
+#  ClamWatch (ClamAV-based Folder Scanner)
 
 A simple **Python + Tkinter antivirus GUI** that scans files and folders using **ClamAV (`clamscan`)**.  
 The tool lets you select a folder, scans all files inside recursively, and reports whether each file is **clean, infected, or errored**.  
@@ -18,19 +18,11 @@ The tool lets you select a folder, scans all files inside recursively, and repor
 -  **Summary Report** – shows total scanned, clean, infected, and errors.  
 -  **Threaded Scan** – UI remains responsive while scanning.  
 
----
 
-  
-```
-
-Example:
-Scanned: 152 | Clean: 150 | Infected: 1 | Errors: 1
-
-```
 
 ---
 
-## 🚀 Installation & Setup
+##  Installation & Setup
 
 ### 1. Install ClamAV
 - **Windows**:  
@@ -63,7 +55,7 @@ python antivirus_gui.py
 
 ---
 
-## 🖱️ Usage
+##  Usage
 
 1. Launch the app.
 2. Browse and select a **folder**.
@@ -73,7 +65,7 @@ python antivirus_gui.py
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 ├── antivirus_gui.py    # Main application code
@@ -82,19 +74,3 @@ python antivirus_gui.py
 
 ---
 
-## ⚠️ Notes & Limitations
-
-* Requires **ClamAV virus definitions** (`freshclam` must be run regularly).
-* Only **scans** files, does **not clean/remove** them automatically.
-* Error results may occur if a file is locked, inaccessible, or not scannable.
-
----
-
-## 📜 License
-
-This project is open-source under the **MIT License**.
-
-```
-
-Do you want me to also add a **“Testing with EICAR virus file”** section in this README so users can verify detection?
-```
